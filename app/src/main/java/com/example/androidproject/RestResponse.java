@@ -3,19 +3,9 @@ package com.example.androidproject;
 import java.util.List;
 
 public class RestResponse {
-    private Integer count;
-    private String next;
-    private List<Pokemon> results;
+ private  List<PlayerDetails> post;
 
-    public Integer getCount() {
-        return count;
-    }
-
-    public String getNext() {
-        return next;
-    }
-
-    public List<Pokemon> getResults() {
-        return results;
-    }
+ public List<PlayerDetails> getPost(){
+     return post;
+ }
 }
