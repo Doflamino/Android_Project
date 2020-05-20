@@ -2,21 +2,21 @@
   "posts": [
     {
       "name" :"Michael Jordan",
-      "height" :198,
+      "height" :"198",
       "team" : "Bulls",
       "position" :"SG",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGbvrIEBBQTFfXEqSS5KkwaRQgw2dKu5uiZOkdIEiuIozUt-2g&usqp=CAU",
       "town": "Chicago",
-      "age": 57,
-      "careerPpg": 30,
-      "draftYear": 1984,
-      "championships": 6,
+      "age": "57",
+      "careerPpg": "30",
+      "draftYear": "1984",
+      "championships": "6",
       "mvp": "5",
       "origin": "Brooklyn"
     },
     {
       "name" :"Stephen Curry",
-      "height" :191,
+      "height" :"191",
       "team" : "Warriors",
       "position" :"PG",
       "image" :"https://img.pngio.com/steph-curry-png-transparent-steph-curry-png-image-free-download-steph-curry-png-300_396.png",
