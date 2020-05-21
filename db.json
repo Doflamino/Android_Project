@@ -1,40 +1,60 @@
 {
   "posts": [
     {
+      "name" :"Michael Jordan",
+      "height" :"198",
+      "team" : "Bulls",
+      "position" :"SG",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGbvrIEBBQTFfXEqSS5KkwaRQgw2dKu5uiZOkdIEiuIozUt-2g&usqp=CAU",
       "town": "Chicago",
       "age": "57",
       "careerPpg": "30",
       "draftYear": "1984",
       "championships": "6",
       "mvp": "5",
-      "origin": "Brooklyn",
+      "origin": "Brooklyn"
     },
     {
+      "name" :"Stephen Curry",
+      "height" :"191",
+      "team" : "Warriors",
+      "position" :"PG",
+      "image" :"https://img.pngio.com/steph-curry-png-transparent-steph-curry-png-image-free-download-steph-curry-png-300_396.png",
       "town": "San Francisco",
       "age": "32",
       "careerPpg": "23",
       "draftYear": "2009",
       "championships": "3",
       "mvp": "2",
-      "origin": "Akron",
+      "origin": "Akron"
     },
    {
+     "name" :"LeBron James",
+      "height" :"203",
+      "team" : "Lakers",
+      "position" :"SF",
+      "image" :"https://i.pinimg.com/originals/b0/21/69/b0216941a4c8a4d0ee4529790f3bc808.png",
       "town": "Los Angeles",
       "age": "37",
       "careerPpg": "27",
       "draftYear": "2003",
       "championships": "3",
       "mvp": "3",
-      "origin": "Akron",
+      "origin": "Akron"
     },
     {
+      "name" :"Larry Bird",
+      "height" :"206",
+      "team" : "Celtics",
+      "position" :"SF",
+      "image" :"https://www.pngkey.com/png/full/149-1497604_larry-bird-by-grzegorz-domaradzki-naismith-memorial-basketball.png",
       "town": "Boston",
       "age": "63",
       "careerPpg": "24",
       "draftYear": "1980",
       "championships": "3",
       "mvp": "3",
-      "origin": "Indiana",
+      "origin": "Indiana"
     }	
  ]
 }
