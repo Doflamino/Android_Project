@@ -9,7 +9,10 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
+import java.util.List;
 
 import static androidx.core.content.ContextCompat.startActivity;
 
@@ -19,7 +22,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     private  int color;
     Intent details;
     private TextView textView;
-    public static PlayerDetails p;
+    public static Player p;
 
 
       public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -36,7 +39,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
             height = v.findViewById(R.id.height);
             team = v.findViewById(R.id.team);
             position = v.findViewById(R.id.position);
-            image= v.findViewById(R.id.image1);
+            image = v.findViewById(R.id.image1);
         }
     }
 
@@ -45,8 +48,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public ListAdapter(ArrayList<Player> myDataset) {
-        playerList = myDataset;
+    public ListAdapter(List<Player> myDataset) {
+        playerList = (ArrayList<Player>) myDataset;
     }
 
     // Create new views (invoked by the layout manager)
@@ -89,7 +92,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         holder.height.setText(currentPlayer.getHeight());
         holder.team.setText(currentPlayer.getTeam());
         holder.position.setText(currentPlayer.getPosition());
-        holder.image.setImageResource(currentPlayer.getImage());
+        Picasso.with(MainActivity.CONTEXT).load(currentPlayer.getImage()).resize(481, 454).into(holder.image);
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

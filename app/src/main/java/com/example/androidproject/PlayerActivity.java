@@ -20,7 +20,7 @@ public class PlayerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.player_activity);
 
-        town = findViewById(R.id.town);
+       /* town = findViewById(R.id.town);
         age = findViewById(R.id.age);
         careerPpg = findViewById(R.id.careerPpg);
         draftYear = findViewById(R.id.draftYear);
@@ -35,10 +35,9 @@ public class PlayerActivity extends AppCompatActivity {
         draftYear.setText(ListAdapter.p.getDraftYear());
         championships.setText(ListAdapter.p.getChampionships()+" titles");
         mvp.setText(ListAdapter.p.getMvp()+" titles");
-        origin.setText(ListAdapter.p.getOrigin());
+        origin.setText(ListAdapter.p.getOrigin());*/
 
 
 
     }
 }
-

@@ -7,7 +7,7 @@ import retrofit2.http.GET;
 
 public interface PlayerApi {
 
-    @GET("/PDybala10/WEsiea/posts")
-    Call<List<PlayerDetails>> getRestResponse();
+    @GET("/Doflamino/Android_Project/posts")
+    Call<List<Player>> getRestResponse();
 
 }

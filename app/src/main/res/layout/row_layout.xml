@@ -76,7 +76,7 @@
                 android:id="@+id/image1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/SC3">
+                android:src="@drawable/sc">
 
             </ImageView>
         </RelativeLayout>

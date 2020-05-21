@@ -2,50 +2,33 @@ package com.example.androidproject;
 
 public class Player {
     private String name;
-    private int height;
+    private String height;
     private String team;
     private String position;
-    private int image;
+    private String  image;
+    private String town;
+    private String age;
+    private String careerPpg;
+    private String draftYear;
+    private String championships;
+    private String mvp;
+    private String origin;
 
-    public Player(String name, int height, String team, String position, int image) {
+ /*   public Player(String name, int height, String team, String position, int image) {
         this.name = name;
         this.height = height;
         this.team = team;
         this.position = position;
         this.image = image;
 
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
-    public void setTeam(String team) {
-        this.team = team;
-    }
-
-    public void setPosition(String post) {
-        this.position = position;
-    }
+    }*/
 
     public String getName() {
         return name;
     }
 
-    public int getHeight() {
+    public String getHeight() {
         return height;
-    }
-
-    public int getImage() {
-        return image;
-    }
-
-    public void setImage(int image) {
-        this.image = image;
     }
 
     public String getTeam() {
@@ -54,5 +37,37 @@ public class Player {
 
     public String getPosition() {
         return position;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public String getTown() {
+        return town;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public String getCareerPpg() {
+        return careerPpg;
+    }
+
+    public String getDraftYear() {
+        return draftYear;
+    }
+
+    public String getChampionships() {
+        return championships;
+    }
+
+    public String getMvp() {
+        return mvp;
+    }
+
+    public String getOrigin() {
+        return origin;
     }
 }

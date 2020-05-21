@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String BASE_URL= "https://my-json-server.typicode.com/";
     private ArrayList<Player> itemsList = new ArrayList<Player>();
-    public static List<PlayerDetails> playerDetailsList = new ArrayList<PlayerDetails>();
+    public static List<Player> playerDetailsList = new ArrayList<Player>();
     private SharedPreferences preferences;
     private Gson gson;
 
@@ -44,30 +44,32 @@ public class MainActivity extends AppCompatActivity {
         gson = new GsonBuilder()
                 .setLenient()
                 .create();
-        List<PlayerDetails> listPlayerPreferences = getDataPreferences();
+        List<Player> listPlayerPreferences = getDataPreferences();
         if(listPlayerPreferences != null){
             playerDetailsList = listPlayerPreferences;
 
+            setData(playerDetailsList);
         } else {
 
             apiCall();
         }
+
     }
 
-    private List<PlayerDetails> getDataPreferences() {
+    private List<Player> getDataPreferences() {
         String jsonOffre =  preferences.getString(PlayerPreference.PREFERENCE_KEY,null);
 
         if(jsonOffre == null) {
             return null;
         }
         else {
-            Type type = new TypeToken<List<PlayerDetails>>() {
+            Type type = new TypeToken<List<Player>>() {
             }.getType();
             return gson.fromJson(jsonOffre, type);
         }
     }
 
-    private void savePreferences(List<PlayerDetails> offreList) {
+    private void savePreferences(List<Player> offreList) {
         String jsonString = gson.toJson(offreList);
 
         preferences
@@ -88,13 +90,18 @@ public class MainActivity extends AppCompatActivity {
 
         PlayerApi playerApi = retrofit.create(PlayerApi.class);
 
-        Call<List<PlayerDetails>> call = playerApi.getRestResponse();
-       call.enqueue(new Callback<List<PlayerDetails>>() {
+        Call<List<Player>> call = playerApi.getRestResponse();
+        call.enqueue(new Callback<List<Player>>() {
            @Override
-           public void onResponse(Call<List<PlayerDetails>> call, Response<List<PlayerDetails>> response) {
+           public void onResponse(Call<List<Player>> call, Response<List<Player>> response) {
                if (response.isSuccessful() && response.body() != null){
                    playerDetailsList = response.body();
+
+
+
                    savePreferences(playerDetailsList);
+
+                  setData(playerDetailsList);
 
                    Toast.makeText(getApplicationContext(), "success",Toast.LENGTH_SHORT).show();
                }else{
@@ -104,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
            }
 
            @Override
-           public void onFailure(Call<List<PlayerDetails>> call, Throwable t) {
+           public void onFailure(Call<List<Player>> call, Throwable t) {
                showError();
 
            }
@@ -114,6 +121,17 @@ public class MainActivity extends AppCompatActivity {
 
     private void showError() {
         Toast.makeText(getApplicationContext(),"API error", Toast.LENGTH_SHORT).show();
+    }
+
+    private void setData(List<Player> lists){
+
+        recyclerView = findViewById(R.id.recycler_view);
+        recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(layoutManager);
+        adapter = new ListAdapter(lists);
+        recyclerView.setAdapter(adapter);
+
     }
 
 
