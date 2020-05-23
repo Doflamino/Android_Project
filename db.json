@@ -55,6 +55,20 @@
       "championships": "3",
       "mvp": "3",
       "origin": "Indiana"
+    },
+    {
+      "name" :"Larry Bird",
+      "height" :"206",
+      "team" : "Celtics",
+      "position" :"SF",
+      "image" :"https://www.pngkey.com/png/full/149-1497604_larry-bird-by-grzegorz-domaradzki-naismith-memorial-basketball.png",
+      "town": "Boston",
+      "age": "63",
+      "careerPpg": "24",
+      "draftYear": "1980",
+      "championships": "3",
+      "mvp": "3",
+      "origin": "Indiana"
     }	
  ]
 }
