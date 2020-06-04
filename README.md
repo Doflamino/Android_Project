@@ -23,3 +23,6 @@ https://github.com/Doflamino/Android_Project
 
 ### Ecran détail du basketteur
 - Affiche des informations plus poussées sur le joueur : la ville où se trouve son équipe, son age, ses différents titres son année de draft (entrée en NBA) et son lieu de naissance
+
+![Capture2](https://user-images.githubusercontent.com/40831947/83779654-85e17900-a68c-11ea-856c-70842bfd0277.PNG)
+
