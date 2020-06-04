@@ -32,13 +32,13 @@ public class PlayerDetails extends AppCompatActivity {
         origin = findViewById(R.id.origin);
         image = findViewById(R.id.image1);
 
-        town.setText("he was born in "+ListAdapter.p.getTown());
-        age.setText("he has "+ListAdapter.p.getAge()+" yo");
-        careerPpg.setText("he averages "+ListAdapter.p.getCareerPpg()+" ppg");
-        draftYear.setText("has been drafted in "+ListAdapter.p.getDraftYear());
+        town.setText("His team is based in "+ListAdapter.p.getTown());
+        age.setText("He has "+ListAdapter.p.getAge()+" yo");
+        careerPpg.setText("He averages "+ListAdapter.p.getCareerPpg()+" ppg");
+        draftYear.setText("Has been drafted in "+ListAdapter.p.getDraftYear());
         championships.setText("He won "+ListAdapter.p.getChampionships()+" championships");
         mvp.setText("he won "+ListAdapter.p.getMvp()+" mvp titles");
-        origin.setText(ListAdapter.p.getOrigin());
+        origin.setText("He was born in "+ListAdapter.p.getOrigin());
 
 
     }
