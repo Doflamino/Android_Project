@@ -12,3 +12,14 @@ https://github.com/Doflamino/Android_Project
 - Ecran avec le détail d'un élément
 - Appel Webservice à une API Rest
 - Stockage de données en cache
+
+## Fonctionnalités:
+### HomeScreen 
+- Affichage de la liste des joueurs  avec leurs informations nom taille age avec des card correspondant aux couleurs de leurs equipes respectives
+
+
+
+![Capture](https://user-images.githubusercontent.com/40831947/83779253-ffc53280-a68b-11ea-82bb-bbe85daabcde.PNG)
+
+### Ecran détail du basketteur
+- Affiche des informations plus poussées sur le joueur : la ville où se trouve son équipe, son age, ses différents titres son année de draft (entrée en NBA) et son lieu de naissance
