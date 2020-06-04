@@ -15,7 +15,7 @@ https://github.com/Doflamino/Android_Project
 
 ## Fonctionnalités:
 ### HomeScreen 
-- Affichage de la liste des joueurs  avec leurs informations nom taille age avec des card correspondant aux couleurs de leurs equipes respectives
+- Affichage de la liste des joueurs  avec leurs informations nom taille age avec des card correspondant aux couleurs de leurs equipes respectives avec les information telles que le nom la taille, le nom de l'équipe et le poste occupé. Une image du joueur qui est récupérée sur internet est aussi affichée 
 
 
 
