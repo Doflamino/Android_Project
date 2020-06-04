@@ -45,15 +45,15 @@ public class MainActivity extends AppCompatActivity {
                 .setLenient()
                 .create();
         List<Player> listPlayerPreferences = getDataPreferences();
-//        if(listPlayerPreferences != null){
-//            playerDetailsList = listPlayerPreferences;
-//
-//            setData(playerDetailsList);
-//        } else {
-//
-//            apiCall();
-//        }
-        apiCall();
+        if(listPlayerPreferences != null){
+            playerDetailsList = listPlayerPreferences;
+
+            setData(playerDetailsList);
+        } else {
+
+            apiCall();
+        }
+
 
     }
 
