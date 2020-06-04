@@ -63,18 +63,22 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
         details = new Intent(parent.getContext(),PlayerDetails.class);
         color++;
-        switch (color % 4) {
-            case 0:
+        switch (color % 6) {
+            case 1:
                 v.findViewById(R.id.layoutCard).setBackground(v.getResources().getDrawable(R.drawable.refs2));
                 break;
-            case 1:
+            case 2:
                 v.findViewById(R.id.layoutCard).setBackground(v.getResources().getDrawable(R.drawable.refs));
                 break;
-            case 2:
+            case 3:
                 v.findViewById(R.id.layoutCard).setBackground(v.getResources().getDrawable(R.drawable.refs4));
                 break;
-            case 3:
+            case 4:
                 v.findViewById(R.id.layoutCard).setBackground(v.getResources().getDrawable(R.drawable.refs3));
+                break;
+            case 5:
+                v.findViewById(R.id.layoutCard).setBackground(v.getResources().getDrawable(R.drawable.refs5));
+
                 break;
         }
 
@@ -88,10 +92,10 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         Player currentPlayer = playerList.get(position);
-        holder.name.setText(currentPlayer.getName());
-        holder.height.setText(currentPlayer.getHeight());
-        holder.team.setText(currentPlayer.getTeam());
-        holder.position.setText(currentPlayer.getPosition());
+        holder.name.setText("Name: "+currentPlayer.getName());
+        holder.height.setText("height: "+currentPlayer.getHeight());
+        holder.team.setText("Plays at "+currentPlayer.getTeam());
+        holder.position.setText("he is a "+currentPlayer.getPosition());
         Picasso.with(MainActivity.CONTEXT).load(currentPlayer.getImage()).resize(481, 454).into(holder.image);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {

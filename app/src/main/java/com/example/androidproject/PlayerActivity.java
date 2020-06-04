@@ -18,9 +18,9 @@ public class PlayerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.player_activity);
+        setContentView(R.layout.activity_player_details);
 
-       /* town = findViewById(R.id.town);
+        town = findViewById(R.id.town);
         age = findViewById(R.id.age);
         careerPpg = findViewById(R.id.careerPpg);
         draftYear = findViewById(R.id.draftYear);
@@ -30,12 +30,11 @@ public class PlayerActivity extends AppCompatActivity {
 
         town.setText(ListAdapter.p.getTown());
         age.setText(ListAdapter.p.getAge()+" yo");
-        //detail_itemImage.setText(ItemsAdapter.m.getTemperature());
         careerPpg.setText(ListAdapter.p.getCareerPpg()+" ppg");
         draftYear.setText(ListAdapter.p.getDraftYear());
         championships.setText(ListAdapter.p.getChampionships()+" titles");
         mvp.setText(ListAdapter.p.getMvp()+" titles");
-        origin.setText(ListAdapter.p.getOrigin());*/
+        origin.setText(ListAdapter.p.getOrigin());
 
 
 
